@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="197" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="20" width="374" height="716"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="198" rowHeight="150" customClass="CountryTableCell" reuseIdentifier="CountryTableCellID">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="198" id="199">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="149.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="204" translatesAutoresizingMaskIntoConstraints="NO">
+                                                    <rect key="frame" x="15" y="32" width="344" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <constraints>
+                                                        <constraint id="218" firstItem="204" firstAttribute="height" constant="21"/>
+                                                    </constraints>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="205" translatesAutoresizingMaskIntoConstraints="NO">
+                                                    <rect key="frame" x="15" y="69" width="344" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <constraints>
+                                                        <constraint id="216" firstItem="205" firstAttribute="height" constant="21"/>
+                                                    </constraints>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="206" translatesAutoresizingMaskIntoConstraints="NO">
+                                                    <rect key="frame" x="15" y="106" width="344" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <constraints>
+                                                        <constraint id="217" firstItem="206" firstAttribute="height" constant="21"/>
+                                                    </constraints>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint id="207" firstItem="204" firstAttribute="leading" secondItem="199" secondAttribute="leading" constant="15"/>
+                                                <constraint id="208" firstItem="204" firstAttribute="top" secondItem="199" secondAttribute="top" constant="32"/>
+                                                <constraint id="209" firstItem="199" firstAttribute="trailing" secondItem="204" secondAttribute="trailing" constant="15"/>
+                                                <constraint id="210" firstItem="205" firstAttribute="top" secondItem="204" secondAttribute="centerY" constant="26"/>
+                                                <constraint id="211" firstItem="205" firstAttribute="leading" secondItem="199" secondAttribute="leading" constant="15"/>
+                                                <constraint id="212" firstItem="199" firstAttribute="trailing" secondItem="205" secondAttribute="trailing" constant="15"/>
+                                                <constraint id="213" firstItem="206" firstAttribute="top" secondItem="205" secondAttribute="bottom" constant="16"/>
+                                                <constraint id="214" firstItem="206" firstAttribute="leading" secondItem="199" secondAttribute="leading" constant="15"/>
+                                                <constraint id="215" firstItem="199" firstAttribute="trailing" secondItem="206" secondAttribute="trailing" constant="15"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="namelabel" destination="204" id="name-outlet-204"/>
+                                            <outlet property="alpha_code2" destination="205" id="name-outlet-205"/>
+                                            <outlet property="alpha_code3" destination="206" id="name-outlet-206"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint id="200" firstItem="197" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom"/>
+                            <constraint id="201" firstItem="197" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin"/>
+                            <constraint id="202" firstItem="197" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin"/>
+                            <constraint id="203" firstItem="197" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countriesTableview" destination="197" id="name-outlet-197"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+</document>
